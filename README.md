@@ -17,9 +17,9 @@ A full-stack IoT project that monitors light and soil moisture using an ESP8266 
 ## Hardware
 
 - **Wemos D1 mini** (ESP8266)
-- **BH1750** light sensor (I²C: SDA = D2, SCL = D1)
+- **BH1750** light sensor (I²C: SDA = D4, SCL = D3)
 - **LM393** soil moisture sensor (A0)
-- **SSD1306** 128×64 OLED (I²C: SDA = D2, SCL = D1)
+- **SSD1306** 128×64 OLED (I²C: SDA = D4, SCL = D3)
 - (Optional) MOSFET (e.g., IRL540N) + pump for watering
 - Breadboard, jumper wires, 3.3 V power for sensors
 
@@ -29,11 +29,11 @@ A full-stack IoT project that monitors light and soil moisture using an ESP8266 
 
 | Device           | Pin        | Connection |
 | ---------------- | ---------- | ---------- |
-| BH1750 SDA       | D2 (GPIO4) | SDA        |
-| BH1750 SCL       | D1 (GPIO5) | SCL        |
+| BH1750 SDA       | D4 (GPIO4) | SDA        |
+| BH1750 SCL       | D3 (GPIO5) | SCL        |
 | LM393 analog out | A0         | Soil pin   |
-| SSD1306 SDA      | D2 (GPIO4) | SDA        |
-| SSD1306 SCL      | D1 (GPIO5) | SCL        |
+| SSD1306 SDA      | D4 (GPIO4) | SDA        |
+| SSD1306 SCL      | D3 (GPIO5) | SCL        |
 | SSD1306 VCC, GND | 3.3 V, GND | Power      |
 
 ---
