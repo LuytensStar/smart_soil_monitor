@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <!-- Дозволити HTTP для локальної мережі, за потреби вкажіть свої IP -->
+    <domain-config cleartextTrafficPermitted="true">
+
+        <domain includeSubdomains="true">192.168.0.4</domain>
+    </domain-config>
+
+    <!-- або повністю увімкнути для всіх доменів (НЕ для продакшена!) -->
+    <!-- <base-config cleartextTrafficPermitted="true" /> -->
+</network-security-config>
